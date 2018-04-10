@@ -29,11 +29,11 @@ function generateQuestion () {
     <form>
      <fieldset>
      <legend>CHEF QUESTIONS </legend>
-     <div class ="inputOptions col-12">
-     <label class = "option"><input type ="radio"  name= "input" value= "${STORE[questionNumber].answers[0]}" required>${STORE[questionNumber].answers[0]}</label><br> 
-     <label class = "option"><input type ="radio"  name= "input" value= "${STORE[questionNumber].answers[1]}" required>${STORE[questionNumber].answers[1]}</label><br>
-     <label class = "option"><input type ="radio"  name= "input" value= "${STORE[questionNumber].answers[2]}" required>${STORE[questionNumber].answers[2]}</label><br>
-     <label class = "option"><input type ="radio"  name= "input" value= "${STORE[questionNumber].answers[3]}" required>${STORE[questionNumber].answers[3]}</label><br>
+     <div id ="radio_label" class ="inputOptions col-12">
+     <label for = '${STORE[questionNumber].answers[0]}'class = "option"><input  type ="radio"  aria-labelledby= 'radio_label' name= "input" value= "${STORE[questionNumber].answers[0]}" required>${STORE[questionNumber].answers[0]}</label><br> 
+     <label for = '${STORE[questionNumber].answers[1]}'class = "option"><input type ="radio"   aria-labelledby= 'radio_label' name= "input" value= "${STORE[questionNumber].answers[1]}" required>${STORE[questionNumber].answers[1]}</label><br>
+     <label for = '${STORE[questionNumber].answers[2]}'class = "option"><input type ="radio"   aria-labelledby= 'radio_label' name= "input" value= "${STORE[questionNumber].answers[2]}" required>${STORE[questionNumber].answers[2]}</label><br>
+     <label for = '${STORE[questionNumber].answers[3]}'class = "option"><input type ="radio"   aria-labelledby= 'radio_label' name= "input" value= "${STORE[questionNumber].answers[3]}" required>${STORE[questionNumber].answers[3]}</label><br>
       </div>
       <button type ="submit" class = "userSubmit" >Submit</button> 
      </fieldset>

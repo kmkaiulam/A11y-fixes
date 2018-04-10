@@ -49,8 +49,9 @@ li{
     text-align:center;
     position:relative;
     bottom:10px;
-    
+    color: white;
     clear: both;
+    background-color: inherit;
 }
 
 .icon{
