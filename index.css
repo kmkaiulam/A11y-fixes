@@ -1,0 +1,273 @@
+*{
+    margin-left:  0;
+    margin-right: 0;;
+    box-sizing: border-box;
+    font-family: Roboto, "sans-serif";    
+    
+}
+
+html{
+    height:100%;
+    width:100%;
+    background: url("https://www.hoodmart.com/pub/media/magefan_blog/commercial-kitchen-design.jpg") no-repeat center center fixed;
+    background-size: cover; 
+
+}
+body{
+    height:100%;
+    width:100%;
+}
+
+header{
+    position: relative;
+    margin-top: 0;
+    margin-bottom:-35px;
+    background-color: grey;
+    height:80px;
+    top:-10px;
+    opacity:.90;
+    color: rgb(218,223,225);
+    text-shadow: black;
+    width:100%
+}
+/* Banner styling */
+ul{
+    list-style: none;
+    text-align:center;
+    font-size: 20px;
+}
+li{
+    display:inline-block;
+    padding: 0 8%;
+    color:rgb(28,40,51);
+}
+    
+    
+.appTitle{
+    font-size: 2em;
+    display:inline-block;
+    text-align:center;
+    position:relative;
+    bottom:10px;
+    
+    clear: both;
+}
+
+.icon{
+    height:80px;
+    width: 80px;
+    opacity:0.25; 
+    
+}
+.leftBannerImg{
+    transform: rotate(180deg);
+    float:left;
+}
+.rightBannerImg{
+    right:0;
+    position:absolute
+
+}
+.scoreBoard{
+    background-color: lightsteelblue;
+    opacity:.90;
+    height: 75px;
+    width:100%;
+    margin-top:25px;
+    
+}
+/*Main Styling*/
+
+
+input{
+    margin-top:30px;
+}
+.userFeedback{
+    font-size:20px;
+}
+main{
+    color:rgb(218,223,225);
+    text-shadow:black;
+    width:100%; 
+}
+/* Styling for buttons on page */
+
+button {
+    font-size: 1em;
+    }
+
+.startButton{
+    position:relative;
+    top:100px;
+}
+
+.userSubmit{
+    margin-top:50px;
+    font-size:1.2em;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 20px;
+    width:100px; 
+}
+
+.option:hover{
+    background-color: rgba(255,255,255,.25);
+    cursor: pointer;
+}
+
+.inputOptions{
+    font-size:1em;
+    height:250px;
+}
+
+/*button styling end */
+
+p{
+    text-align:center;
+    position:relative;
+    font-size:1em;
+}
+ 
+
+
+
+.quizAppBegin{
+    height:500px;
+}
+
+.quizForm {
+    background-color:rgba(2,2,2,.50);
+    text-align: center;
+    height:auto;
+    width:100%;
+    margin-top:-20px;
+    padding-top:20px;
+    color:#b2cee5;
+}
+.question{
+    height:400px;
+}   
+fieldset{
+    height:100%;
+    background-color:rgba(2,2,2,.75);
+}
+
+.userFeedback{
+    display:inline-block;
+    width:100%;
+    height:auto;
+    vertical-align: middle;
+    background-color:black;
+}
+
+.inputOptions{
+    text-align:left;
+}
+
+.feedbackImageContainer{
+    background-color:rgba(2,2,2,.75);
+    margin-left:15%;
+    margin-right:15%;
+    height:auto;
+    text-align: center;
+}
+
+
+.feedbackImage {
+    display:inline-block;
+    height:50%;
+    width: 50%;
+    vertical-align: middle;
+    margin-left:25%;
+    margin-right:25%;
+     
+}
+.nextQuestion, .restartQuiz {
+    position: relative;
+    text-align:center;
+    margin: 0 auto;
+    }
+    
+@media only screen and (max-width: 640px) {
+    .col-12::before,
+    .col-12::after {
+      display: table;
+      content: '';
+    }
+    
+    .col-12::after {
+      clear: both;
+    }
+    .col-12{
+    font-size:18px;
+    width:100%;
+    }
+    header{
+    margin-bottom:10px;
+    }
+    .scoreBoard{
+    margin-top:-20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .col-12::before,
+    .col-12::after {
+      display: table;
+      content: '';
+    }
+    
+
+    .col-12::after {
+      clear: both;
+    }
+    .col-12{
+    font-size:18px;
+    width:100%;
+    }
+    .rightBannerImg{
+        visibility:hidden;
+    }
+    header{
+    margin-bottom:10px;
+    } 
+    
+    .scoreBoard{
+    margin-top:-20px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+   .col-12::before,
+   .col-12::after {
+     display: table;
+     content: '';
+   }
+   
+   .col-12::after {
+     clear: both;
+   }   
+
+   .col-12{
+        height:20%;
+        font-size:18px;
+        width:100%;
+    }        
+    header{
+    margin-bottom:-10px;
+    }
+    .rightBannerImg{
+        visibility:hidden;
+    }
+    header{
+        margin-bottom:0;
+        }
+    .scoreBoard{
+    margin-top:-45px;
+     }
+
+  
+}
